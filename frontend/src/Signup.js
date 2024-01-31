@@ -33,7 +33,7 @@ function Signup() {
   return (
     <div className='d-flex justify-content-center align-items-center bg-primary vh-100'>
             <div className='bg-white p-3 rounded w-25'>
-                <h2>Sign Up</h2>
+                <h2 className="heading mb-4 text-center">Sign up</h2>
                 <form action="" onSubmit={handleSubmit}>
                     <div className='mb-3'>
                         <label htmlFor="name"><strong>Name</strong></label>
@@ -53,8 +53,7 @@ function Signup() {
                         onChange={handleInput} className='form-control rounded-0'/>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                     </div>
-                    <button type="submit" className='btn btn-success w-100 rounded-0'>Sign up</button>
-                    <p>You are agree to terms and Conditions</p>
+                    <button type="submit" className='btn btn-success w-100 rounded-0 mb-3'>Sign up</button>
                     <Link to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Log in</Link>
                 </form>
             </div>
