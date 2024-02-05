@@ -38,23 +38,23 @@ function Signup() {
                     <div className='mb-3'>
                         <label htmlFor="name"><strong>Name</strong></label>
                         <input type="text" placeholder="Enter Name"  name='name' autocomplete="on"
-                        onChange={handleInput} className='form-control rounded-0'/>
+                        onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.name && <span className='text-danger'>{errors.name}</span>}
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="email"><strong>Email</strong></label>
                         <input type="email" placeholder="Enter Email"  name='email' autocomplete="on"
-                        onChange={handleInput} className='form-control rounded-0'/>
+                        onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.email && <span className='text-danger'>{errors.email}</span>}
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="password"><strong>Password</strong></label>
                         <input type="password" placeholder="Enter Password"  name='password' autocomplete="on"
-                        onChange={handleInput} className='form-control rounded-0'/>
+                        onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                     </div>
-                    <button type="submit" className='btn btn-success w-100 rounded-0 mb-3'>Sign up</button>
-                    <Link to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Log in</Link>
+                    <button type="submit" className='btn btn-success w-100 rounded-0 p-1 mb-3'>Sign up</button>
+                    <Link to="/" className='btn btn-default border w-100 bg-light p-1 rounded-0 text-decoration-none'>Log in</Link>
                 </form>
             </div>
         </div>

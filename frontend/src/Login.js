@@ -47,17 +47,17 @@ function Login(){
                     <div className='mb-3'>
                         <label htmlFor="email"><strong>Email</strong></label>
                         <input type="email" placeholder="Enter Email" name='email'
-                        onChange={handleInput} className='form-control rounded-0'/>
+                        onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.email && <span className='text-danger'>{errors.email}</span>}
                     </div>
                     <div className='mb-3'>
                         <label htmlFor="password"><strong>Password</strong></label>
                         <input type="password" placeholder="Enter Password" name='password'
-                        onChange={handleInput} className='form-control rounded-0'/>
+                        onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                     </div>
-                    <button type ='submit' className='btn btn-success w-100 rounded-0 mb-3'>Log in</button>
-                    <Link to="/signup" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none'>Create Account</Link>
+                    <button type ='submit' className='btn btn-success w-100 rounded-0 mb-3 p-1'>Log in</button>
+                    <Link to="/signup" className='btn btn-default border w-100 bg-light p-1 rounded-0 text-decoration-none'>Create Account</Link>
                 </form>
             </div>
         </div>
