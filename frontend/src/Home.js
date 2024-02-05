@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link, Navigate, useLocation} from 'react-router-dom';
+import Footer from './Footer';
 
 function Home() {
     const location=useLocation()
@@ -11,12 +12,15 @@ function Home() {
   return (
     <div className='parent bg-primary'>
     <div className='top-headings text-white text-end pt-3 pe-5'>
+    {/* <a href ="/" className='About text-white text-decoration-none p-3' target='_blank'>About</a>
+    <a href ="/" className='Know more text-white text-decoration-none p-3' target='_blank'>Know more</a> */}
       <a href ="https://suchita01.github.io/" className='porfoliolink text-white text-decoration-none p-3' target='_blank'>Portfolio</a>
-      <Link to="/" className='logout text-white text-decoration-none'>Logout</Link>
+      <Link to="/" className='logout text-white text-decoration-none p-3'>Logout</Link>
     </div>
-    <div className='d-flex justify-content-center align-items-center text-white p-5 mb-5 vh-100'>
-     <h1>Welcome! {location.state.id}</h1>
+    <div className='d-flex justify-content-center align-items-center text-white vh-100'>
+     <h1>Welcome! {location?.state?.id}</h1>
     </div>
+    <Footer/>
 
     </div>
     
