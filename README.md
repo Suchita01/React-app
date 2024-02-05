@@ -15,3 +15,12 @@ This is Basic React Application using  ReactJs, NodeJs and MySQL.
 </ul>
   
 2- Import the signup.sql file into the mysql database <br/>
+
+# ScreenShots
+
+<p align="left">
+  <img src="login.png" width="200" alt="page-1">
+  <img src="signup.png" width="200" alt="page-2">
+  <img src="db.png" width="200" alt="Device Location">
+  <img src="home.png" width="200" alt="City Validation">
+</p>
