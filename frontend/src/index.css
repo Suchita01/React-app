@@ -12,7 +12,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a, .navbar-brand{
+font-weight:500;
+font-size: large;
+}
+
+.headersection{
+  padding:30px;
+  margin:30px;
+  color:rgb(54, 54, 53);
+  background-color: rgb(245, 235, 235);
+}
+.btn{
+  border-radius: 0px!important;
+}
+.card{
+border-radius: 0px!important;
+padding:10px;
+}
+
+.card img{
+width:0 auto;
+border-radius: 0;
+
+}
+
+.carousel-item img{
+height:380px;
+object-fit:cover;
+object-position:center;
 }
