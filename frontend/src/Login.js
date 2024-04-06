@@ -58,7 +58,7 @@ function Login(){
                         onChange={handleInput} className='form-control p-1 rounded-0'/>
                         {errors.password && <span className='text-danger'>{errors.password}</span>}
                     </div>
-                    <button type ='submit' className='btn btn-success w-100 rounded-0 mb-3 p-1'>Log in</button>
+                    <button type ='submit' className='btn btn-dark w-100 rounded-0 mb-3 p-1'>Log in</button>
                     <Link to="/signup" className='btn btn-default border w-100 bg-light p-1 rounded-0 text-decoration-none'>Create Account</Link>
                 </form>
             </div>
