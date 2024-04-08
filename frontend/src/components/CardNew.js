@@ -4,7 +4,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 function KitchenSinkExample() {
   return (
     <div className='container'>
-    <Card style={{ width: '18rem',marginTop:'50px',textAlign:'center' }}>
+    <Card style={{ width: '18rem',marginTop:'80px',textAlign:'center'}}>
       <Card.Img variant="top" src="b1.jpg" style={{height:'250px'}} />
       <Card.Body>
         <Card.Title>A Suitable Boy</Card.Title>
@@ -17,8 +17,8 @@ function KitchenSinkExample() {
        
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Download</Card.Link>
-        <Card.Link href="#">More</Card.Link>
+        <Card.Link href="#">Download PDF</Card.Link>
+        {/* <Card.Link href="#">More</Card.Link> */}
       </Card.Body>
     </Card>
     </div>
