@@ -7,7 +7,7 @@ function Footer() {
       <p><strong>Contact me</strong>: chaudharysuchita166@gmail.com</p>
     </div>
     <div style={{ textAlign: 'center',fontSize: '13px',color:'#fff' }}>
-      <p>&copy; 2024 | E-Books | All Rights Reserved.</p>
+      <p>&copy; 2024 | Bookart | All Rights Reserved.</p>
     </div>
     </div>
   </footer>

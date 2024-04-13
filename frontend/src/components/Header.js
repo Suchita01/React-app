@@ -6,7 +6,7 @@ const Header = () => {
         <h1>Fiction Books</h1>
       </div>
     </div>
-  )
+  );
 }
 
 export default Header
