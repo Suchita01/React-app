@@ -10,60 +10,60 @@ import { Col, Row } from "react-bootstrap";
 
 const NewHome = () => {
   const book1 = {
-    "title": "Book1",
-    "author": "Dan",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book2 = {
-    "title": "Book2",
-    "author": "Dan",
+    "title": "The Great Gatsby",
+    "author": "Scott Fitzgerald",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book3 = {
-    "title": "Book3",
-    "author": "Dan",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book4 = {
-    "title": "Book4",
-    "author": "Dan",
-    "desc": "This is a description of first book",
+    "title": "Yellowface",
+    "author": "R.F. Kuang",
+    "desc": "R.F. Kuang continues her astonishing ascent from genre specialist to literary sensation with Yellowface",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book5 = {
-    "title": "Book5",
-    "author": "Dan",
+    "title": "A Suitable Boy",
+    "author": "Vikram Seth",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book6 = {
-    "title": "Book6",
-    "author": "Dan",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book7 = {
-    "title": "Book7",
-    "author": "Dan",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   const book8 = {
-    "title": "Book8",
-    "author": "Dan",
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
     "desc": "This is a description of first book",
     "price": 2000,
-    "link":"https:www.google.com"
+    "link":"goodreads.com"
   }
   var bookList = [];
 
