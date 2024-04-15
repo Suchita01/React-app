@@ -43,9 +43,12 @@ width:0 auto;
 border-radius: 0;
 
 }
+.flex-fill , Card{
+   box-shadow:0 0 10px rgba(0,0,0,0.6);
+}
 
 .carousel-item img{
-height:400px;
+/* height:0 auto; */
 object-fit:cover;
 object-position:center;
 }

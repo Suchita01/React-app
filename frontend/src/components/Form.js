@@ -55,7 +55,7 @@ function GridComplexExample() {
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
 
-      <Button variant="dark" type="submit">
+      <Button variant="dark" type="submit" style={{fontWeight:'500',padding:'10px 18px'}}>
         Submit
       </Button>
     </Form>
