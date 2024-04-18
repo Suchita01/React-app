@@ -61,9 +61,6 @@ const AddBookForm=({ bookData, handleInputChange, handleSubmit, errors ,link})=>
 
         </Row>
        
-       
-      
-
       <Button variant="dark" type="submit" style={{fontWeight:'500',padding:'10px 20px'}}>
         Add Book
       </Button>

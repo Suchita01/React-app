@@ -60,7 +60,7 @@ const register = (req, res, db) => {
             return res.json("Error");
         }
         if(data.length > 0) {
-            return res.json(data);
+            return res.json(data);//list of books passed from res.
         } else {
             return res.json("Failed");           
         } 

@@ -4,7 +4,12 @@ import Validation from './SignupValidation'
 import axios from 'axios'
 
 function Signup() {
-    const [values, setValues] = useState({name: '', email: '', password: ''}) 
+    const [values, setValues] = useState({
+            name: '', 
+            email: '', 
+            password: ''
+        }
+    ) 
 
     const navigate = useNavigate();
 

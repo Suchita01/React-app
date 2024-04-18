@@ -17,7 +17,7 @@ const CardNew = (props)=> {
         <Card.Text style={{fontSize:'16px',color:'GrayText'}}>{desc}</Card.Text>
       </Card.Body>
       <ListGroup className="list-group-flush">
-        <ListGroup.Item>By: {author}</ListGroup.Item>
+        <ListGroup.Item>Author : {author}</ListGroup.Item>
       </ListGroup>
 
       <Card.Body>

@@ -1,4 +1,5 @@
 import { React, useEffect, useState} from 'react'
+import {Navigate, useLocation} from 'react-router-dom';
 import NavbarNew from './components/NavbarNew';
 import Header from './components/Header';
 import CardNew from './components/CardNew';
@@ -12,6 +13,7 @@ import axios from 'axios';
 
 const NewHome = () => {
 
+  const location = useLocation()
 
   const [bookData, setBookData] = useState({
     name: '',
@@ -34,11 +36,12 @@ useEffect(() =>{
   fetchBooks()
 },[]);
 
+//function to fetch all books from db using network call
 const fetchBooks = ()=>{
   axios.get('http://localhost:8081/getBooks')
   .then(res => {
       if(res.data==="Error"){
-        alert("Book not added")
+        alert("Unable to fetch")
       }else{
         setBookList(res.data)
       } 
@@ -72,6 +75,12 @@ const handleSubmit = (event) => {
       .catch(err => console.log(err))
   }
 }
+
+    console.log(location.state);
+    if (location.state === null) {
+        alert("Please Login first!!!")
+        return <Navigate to="/"/>
+    }
 
   return (
     <div className="page">
