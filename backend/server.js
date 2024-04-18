@@ -24,6 +24,14 @@ app.post('/login', (req , res) => {
     controller.login(req, res, db)
 })
 
+app.post('/addbook', (req , res) => {
+    controller.addbook(req, res, db)
+})
+
+app.get('/getBooks', (req , res) => {
+    controller.getBooks(req, res, db)
+})
+
 app.listen(process.env.PORT, () =>{
     console.log("listening");
 })

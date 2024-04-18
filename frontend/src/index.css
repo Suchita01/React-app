@@ -35,7 +35,6 @@ font-weight: 800;
 }
 .card{  
 border-radius: 0px!important;
-padding:10px;
 }
 
 .card img{
@@ -44,7 +43,7 @@ border-radius: 0;
 
 }
 .flex-fill , Card{
-   box-shadow:0 0 10px rgba(0,0,0,0.6);
+   box-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
 .carousel-item img{

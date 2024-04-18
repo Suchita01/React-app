@@ -23,7 +23,42 @@ const register = (req, res, db) => {
         if(err){
             return res.json("Error");
         }
-        console.log(res.body)
+        if(data.length > 0) {
+            return res.json(data);
+        } else {
+            return res.json("Failed");           
+        } 
+    })
+  };
+
+  const addbook = (req, res, db) => {
+    const sql = "INSERT INTO books (`name`, `description`, `author`, `price`,`imageUrl`, `link`) VALUES (?)"
+    const values = [
+        req.body.name,
+        req.body.description,
+        req.body.author,
+        req.body.price,
+        req.body.imageUrl,
+        req.body.link
+    ];
+
+
+    db.query(sql , [values], (err, data) => {
+        if(err){
+            return res.json("Error");
+        }
+        return res.json(data);
+    })
+
+  };
+
+  const getBooks = (req, res, db) => {
+
+    const sql = "SELECT * FROM books"
+    db.query(sql , [], (err, data) => {
+        if(err){
+            return res.json("Error");
+        }
         if(data.length > 0) {
             return res.json(data);
         } else {
@@ -32,4 +67,4 @@ const register = (req, res, db) => {
     })
   };
   
-  module.exports = { register, login };
+  module.exports = { register, login, addbook, getBooks};

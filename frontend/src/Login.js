@@ -24,21 +24,21 @@ function Login(){
 
         if(err.email === "" && err.password===""){
 
-            navigate('/newhome',{state:{id:"Suchita"}});
-            // axios.post('http://localhost:8081/login', values)
-            // .then(res => {
-            //     //console.log(res.data[0]['id'])
-            //     if(res.data.length > 0) {
-            //         if(res.data[0]['name']!=null){
-            //             navigate('/home',{state:{id:res.data[0]['name']}});
-            //         }else{
-            //             alert("No Record found");
-            //         }
-            //     } else {                        
-            //         alert("No Record found");
-            //     } 
-            // })
-            // .catch(err => console.log(err))
+           // navigate('/newhome',{state:{id:"Suchita"}});
+            axios.post('http://localhost:8081/login', values)
+            .then(res => {
+                //console.log(res.data[0]['id'])
+                if(res.data.length > 0) {
+                    if(res.data[0]['name']!=null){
+                        navigate('/newhome',{state:{id:res.data[0]['name']}});
+                    }else{
+                        alert("No Record found");
+                    }
+                } else {                        
+                    alert("No Record found");
+                } 
+            })
+            .catch(err => console.log(err))
         }
     }
     return (

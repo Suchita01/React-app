@@ -19,16 +19,15 @@ function Signup() {
         const err = Validation(values);
         setErrors(err)
         if(err.name ==="" && err.email === "" && err.password===""){
-            navigate('/');
-            // axios.post('http://localhost:8081/signup', values)
-            // .then(res => {
-            //     if(res.data==="Error"){
-            //         alert("Email id already exist.")
-            //     }else{
-            //         navigate('/');
-            //     }
-            // })
-            // .catch(err => console.log(err))
+            axios.post('http://localhost:8081/signup', values)
+            .then(res => {
+                if(res.data==="Error"){
+                    alert("Email id already exist.")
+                }else{
+                    navigate('/');
+                }
+            })
+            .catch(err => console.log(err))
         }
     }
   return (

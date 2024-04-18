@@ -1,38 +1,27 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import {useNavigate }from 'react-router-dom'
 
 function CollapsibleExample() {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path); // Navigate to the specified path
+  };
+
   return (
     <Navbar bg="dark" data-bs-theme="dark" sticky="top" collapseOnSelect expand="lg" className="bg-body-tertiary p-3">
       <Container>
-        <Navbar.Brand href="#home">BOOKART</Navbar.Brand>
+        <Navbar.Brand href="#home">BOOKLIB</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="">All PDFs</Nav.Link>
-            <Nav.Link href="#">Best Sellers</Nav.Link>
-            <Nav.Link href="#">New Arrivals</Nav.Link>
-            
-            
-            {/* <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown> */}
-          </Nav>
-          <Nav>
-          <Nav.Link href="#">Request a Book</Nav.Link>
-            <Nav.Link eventKey={2} href="#">
-              Featured Authors
-            </Nav.Link>
-          </Nav>
+          <Nav className="ms-auto">
+            <Nav.Link onClick={() => handleNavigate('/users')}>Users</Nav.Link>
+         </Nav>
+         <Nav>
+            <Nav.Link onClick={() => handleNavigate('/')}>Logout</Nav.Link>
+         </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
